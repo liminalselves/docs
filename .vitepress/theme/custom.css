@@ -1,0 +1,5 @@
+/* Logo 圆角 */
+.VPNavBar .logo img,
+.VPHero .image-container img {
+  border-radius: 12px;
+}
