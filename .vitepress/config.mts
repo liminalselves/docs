@@ -1,15 +1,125 @@
-import { defineConfig } from 'vitepress'
+import { defineConfig, type DefaultTheme } from 'vitepress'
+
+const hostname = 'https://docs.liminalselves.top'
+
+const sidebar: DefaultTheme.Sidebar = [
+  {
+    text: '开始使用',
+    items: [
+      { text: '注册与登录', link: '/guide/getting-started' },
+      { text: '社区规范', link: '/guide/rules' },
+    ]
+  },
+  {
+    text: '阈界人格社区（Misskey）',
+    items: [
+      { text: '功能一览', link: '/guide/features' },
+      { text: '帖子与时间线', link: '/guide/posts' },
+      { text: '消息与通知', link: '/guide/messages' },
+      {
+        text: '智能体',
+        collapsed: false,
+        items: [
+          { text: '游玩入门', link: '/guide/agent/quick-start' },
+          { text: '聊天与会话', link: '/guide/agent/chat' },
+          { text: '对话语法', link: '/guide/agent/syntax' },
+          { text: '主动消息', link: '/guide/agent/proactive' },
+          { text: '记忆', link: '/guide/agent/memory' },
+          { text: '创作角色', link: '/guide/agent/create' },
+          { text: '世界书', link: '/guide/agent/worldbook' },
+          { text: '正则与表情包', link: '/guide/agent/regex-stickers' },
+          { text: '对话风格', link: '/guide/agent/styles' },
+          { text: '用量与额度', link: '/guide/agent/usage' },
+          { text: '智能体 FAQ', link: '/guide/agent/faq' },
+        ]
+      },
+      {
+        text: '内容与发布',
+        collapsed: true,
+        items: [
+          { text: '回应与表情符号', link: '/guide/misskey/reactions' },
+          { text: 'MFM 语法', link: '/guide/misskey/mfm' },
+          { text: '网盘', link: '/guide/misskey/drive' },
+        ]
+      },
+      {
+        text: '浏览与整理',
+        collapsed: true,
+        items: [
+          { text: '频道', link: '/guide/misskey/channels' },
+          { text: '列表与天线', link: '/guide/misskey/lists-antennas' },
+          { text: '便签与收藏', link: '/guide/misskey/clips-favorites' },
+        ]
+      },
+      {
+        text: '创作与娱乐',
+        collapsed: true,
+        items: [
+          { text: '图集', link: '/guide/misskey/gallery' },
+          { text: '页面与 Play', link: '/guide/misskey/pages-play' },
+          { text: '内置游戏', link: '/guide/misskey/games' },
+          { text: '成就与头像挂件', link: '/guide/misskey/achievements' },
+        ]
+      },
+      {
+        text: '平台与设置',
+        collapsed: true,
+        items: [
+          { text: '界面、主题与小工具', link: '/guide/misskey/ui-themes' },
+          { text: '设置与隐私', link: '/guide/misskey/settings-privacy' },
+        ]
+      },
+    ]
+  },
+  {
+    text: 'Aliya Web',
+    items: [
+      { text: '介绍与使用', link: '/guide/aliya-web' },
+    ]
+  },
+  {
+    text: '客户端',
+    items: [
+      { text: '官方客户端', link: '/guide/clients/official' },
+      { text: '第三方应用', link: '/guide/third-party' },
+    ]
+  },
+  {
+    text: '帮助',
+    items: [
+      { text: '从旧版迁移', link: '/guide/migration' },
+      { text: '常见问题', link: '/guide/faq' },
+    ]
+  }
+]
 
 export default defineConfig({
   title: '阈界人格',
   description: '阈界人格 Misskey 服务器产品文档',
   lang: 'zh-CN',
   cleanUrls: true,
+  srcExclude: ['**/README.md'],
+  sitemap: { hostname },
+  lastUpdated: true,
 
   head: [
     ['link', { rel: 'icon', type: 'image/jpeg', href: '/logo.jpg' }],
+    ['meta', { property: 'og:type', content: 'website' }],
+    ['meta', { property: 'og:site_name', content: '阈界人格文档' }],
+    ['meta', { property: 'og:image', content: `${hostname}/logo.jpg` }],
+    ['meta', { name: 'twitter:card', content: 'summary' }],
   ],
-  lastUpdated: true,
+
+  transformHead({ pageData }) {
+    const title = pageData.title
+      ? `${pageData.title} | 阈界人格文档`
+      : '阈界人格产品文档'
+    const url = `${hostname}/${pageData.relativePath.replace(/(^|\/)index\.md$/, '$1').replace(/\.md$/, '')}`
+    return [
+      ['meta', { property: 'og:title', content: title }],
+      ['meta', { property: 'og:url', content: url }],
+    ]
+  },
 
   themeConfig: {
     logo: '/logo.jpg',
@@ -17,7 +127,9 @@ export default defineConfig({
 
     nav: [
       { text: '首页', link: '/' },
-      { text: '产品文档', link: '/guide' },
+      { text: '产品文档', link: '/guide/getting-started' },
+      { text: '从旧版迁移', link: '/guide/migration' },
+      { text: '常见问题', link: '/guide/faq' },
       {
         text: '相关链接',
         items: [
@@ -27,50 +139,7 @@ export default defineConfig({
       }
     ],
 
-    sidebar: [
-      {
-        text: '开始使用',
-        items: [
-          { text: '注册 / 登录', link: '/guide#_0-注册-登录' },
-          { text: '帖子（发现 & 时间线）', link: '/guide#_1-帖子-发现-时间线' },
-        ]
-      },
-      {
-        text: '智能体',
-        collapsed: false,
-        items: [
-          { text: '快速开始', link: '/guide#_2-1-快速开始' },
-          { text: '广场', link: '/guide#_2-2-广场' },
-          { text: '聊天', link: '/guide#_2-3-聊天' },
-          { text: '消息', link: '/guide#_2-4-消息' },
-          { text: '搜索', link: '/guide#_2-5-搜索' },
-          { text: '模型', link: '/guide#_2-6-模型' },
-          { text: '生图', link: '/guide#_2-7-生图' },
-          { text: '主动消息', link: '/guide#_2-8-主动消息' },
-          { text: '记忆', link: '/guide#_2-9-记忆' },
-          { text: '创作角色', link: '/guide#_2-10-创作角色' },
-          { text: '用量与额度', link: '/guide#_2-11-用量与额度' },
-          { text: '智能体会话', link: '/guide#_2-12-智能体会话' },
-          { text: '原 Aliya Bot', link: '/guide#_2-13-原aliya-bot' },
-          { text: '数据迁移', link: '/guide#_2-14-关于aliya聊天机器人服务数据迁移至智能体的办法' },
-        ]
-      },
-      {
-        text: '消息与通知',
-        items: [
-          { text: '消息（私信）', link: '/guide#_3-消息' },
-          { text: '通知', link: '/guide#_4-通知' },
-        ]
-      },
-      {
-        text: '更多',
-        items: [
-          { text: '其他功能', link: '/guide#_5-其他功能' },
-          { text: 'Aliya Web', link: '/guide#_6-aliya-web' },
-          { text: '第三方应用程序', link: '/guide#_7-第三方应用程序' },
-        ]
-      }
-    ],
+    sidebar,
 
     outline: {
       level: [2, 3],
