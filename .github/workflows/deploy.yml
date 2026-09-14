@@ -38,6 +38,10 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
+          # 先把构建产物移出工作区：deploy 分支跟踪过 .vitepress/dist 下的旧文件，
+          # 不移走的话 checkout 时同名未跟踪文件会被旧跟踪文件静默覆盖，随后被 git rm 删掉
+          mv .vitepress/dist /tmp/dist
+
           # 拉取远程 deploy 分支，基于最新历史追加提交（保证服务器 git pull 可快进更新）
           git fetch origin deploy:deploy 2>/dev/null || true
 
@@ -47,11 +51,11 @@ jobs:
             git checkout --orphan deploy
           fi
 
-          # 清空分支上旧文件（构建产物 .vitepress/dist 未跟踪，不受影响）
+          # 清空分支上旧文件（含历史残留的 .vitepress 目录）
           git rm -rf . --quiet 2>/dev/null || true
 
           # 将构建产物复制到分支根目录
-          cp -r .vitepress/dist/. .
+          cp -r /tmp/dist/. .
 
           git add -A
           # 无内容变化时跳过提交
