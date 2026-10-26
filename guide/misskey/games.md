@@ -2,6 +2,8 @@
 
 服务器内置了两款小游戏，通过侧栏「Misskey Games」进入，都可以与其他用户联机对战。
 
+![Misskey Games](/images/misskey-games.webp)
+
 ## 泡泡游戏
 
 泡泡游戏是一款休闲消除游戏：投下道具，让相同种类碰撞合成，连锁合并获得高分。

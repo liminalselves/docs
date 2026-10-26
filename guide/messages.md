@@ -31,6 +31,8 @@
 
 通知页面集中展示所有与你相关的动态。
 
+![通知](/images/misskey-notifications.webp)
+
 ### 标签页
 
 | 标签页 | 内容 |

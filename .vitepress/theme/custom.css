@@ -3,3 +3,20 @@
 .VPHero .image-container img {
   border-radius: 12px;
 }
+/* 首页正文 */
+.VPHome .vp-doc {
+  max-width: 1152px;
+  margin: 48px auto 0;
+  padding: 0 24px;
+}
+@media (min-width: 640px) {
+  .VPHome .vp-doc { padding: 0 48px; }
+}
+@media (min-width: 960px) {
+  .VPHome .vp-doc { padding: 0 64px; }
+}
+
+/* 手机截图 */
+.vp-doc img.phone-shot {
+  max-width: 320px;
+}

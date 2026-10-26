@@ -69,6 +69,7 @@ const sidebar: DefaultTheme.Sidebar = [
           { text: '设置与隐私', link: '/guide/misskey/settings-privacy' },
         ]
       },
+      { text: '官方 App', link: '/guide/clients/official' },
     ]
   },
   {
@@ -78,9 +79,8 @@ const sidebar: DefaultTheme.Sidebar = [
     ]
   },
   {
-    text: '客户端',
+    text: '第三方应用',
     items: [
-      { text: '官方客户端', link: '/guide/clients/official' },
       { text: '第三方应用', link: '/guide/third-party' },
     ]
   },
@@ -95,7 +95,7 @@ const sidebar: DefaultTheme.Sidebar = [
 
 export default defineConfig({
   title: '阈界人格',
-  description: '阈界人格 Misskey 服务器产品文档',
+  description: '阈界人格社区与相关项目的使用文档',
   lang: 'zh-CN',
   cleanUrls: true,
   srcExclude: ['**/README.md'],
@@ -127,7 +127,7 @@ export default defineConfig({
 
     nav: [
       { text: '首页', link: '/' },
-      { text: '产品文档', link: '/guide/getting-started' },
+      { text: '社区文档', link: '/guide/getting-started' },
       { text: '从旧版迁移', link: '/guide/migration' },
       { text: '常见问题', link: '/guide/faq' },
       {

@@ -39,6 +39,6 @@ $[spin.alternate 🌀]
 $[x2 $[rainbow 彩虹大字]]
 ```
 
-动画效果会在时间线中实际播放，善用可以让内容更生动，但也别过度使用，以免影响阅读。
+动画效果会在时间线中实际播放。
 
 更完整的语法说明见官方文档：[MFM Cheatsheet](https://misskey-hub.net/en/docs/for-users/features/mfm/)。

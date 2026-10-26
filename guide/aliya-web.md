@@ -1,6 +1,6 @@
 # Aliya Web
 
-Aliya Web 是与阈界人格社区同级的独立项目——基于社区智能体功能开发的 Aliya 聊天终端，仿照原版游戏 UI 设计，电脑手机均可访问使用。[**传送门**](https://aliya.liminalselves.top)
+Aliya Web 是阈界人格项目组的另一个项目：基于社区智能体功能开发的 Aliya 聊天终端，仿照原版游戏 UI 设计，电脑手机均可访问使用。[**传送门**](https://aliya.liminalselves.top)
 
 ## 登录说明
 

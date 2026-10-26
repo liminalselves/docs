@@ -24,4 +24,6 @@
 - 在「设置 → 表情面板」可以整理常用表情、调整顺序。
 - 发帖输入框上方的 MFM 功能菜单中也能快速插入表情。
 
+![回应选择器](/images/misskey-reaction-picker.webp)
+
 相关页面：[帖子与时间线](/guide/posts)中的「互动」一节、[MFM 语法](/guide/misskey/mfm)。

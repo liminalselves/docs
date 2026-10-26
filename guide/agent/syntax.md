@@ -2,6 +2,10 @@
 
 与智能体对话时（你和角色的气泡内），排版语法与站内帖子**不同**：对话气泡支持 GitHub 风格 Markdown（GFM）和安全范围内的 HTML；帖子等站内位置使用的 MFM 不会作用于对话气泡。
 
+站内的「对话语法说明」页（`/agents/syntax-guide`）汇总了这些语法并附带实时预览。
+
+![对话语法说明](/images/agent-syntax-guide.webp)
+
 ## Markdown（GFM）
 
 对话气泡支持以下语法（角色输出也遵循同样规则）：

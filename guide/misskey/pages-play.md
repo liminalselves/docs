@@ -14,6 +14,8 @@
 
 与帖子的区别：帖子是时间线动态，页面是长期存在的独立文章，适合置顶链接分享。
 
+![页面列表](/images/misskey-pages.webp)
+
 ## Play
 
 Play 是用 AiScript 脚本语言编写的互动小程序，可以做出按钮、小测试、抽签、计算器等交互内容：
@@ -22,6 +24,8 @@ Play 是用 AiScript 脚本语言编写的互动小程序，可以做出按钮�
 - 点击「创建 Play」后编写脚本，设置标题、描述、封面。
 - 可以标记喜欢其他用户的 Play。
 - Play 同样有独立 URL，可分享。
+
+![Play 列表](/images/misskey-play.webp)
 
 ::: tip
 Play 使用 Misskey 内置的 AiScript 语言，官方文档与社区有大量示例可参考。想深入学习可以查阅 [AiScript 官方仓库](https://github.com/aiscript-dev/aiscript)。
