@@ -20,8 +20,10 @@
 | Play | AiScript 互动小程序 | [页面与 Play](/guide/misskey/pages-play) |
 | 游戏 | 泡泡游戏、黑白棋 | [内置游戏](/guide/misskey/games) |
 | 成就 | 互动成就与徽章 | [成就与头像挂件](/guide/misskey/achievements) |
-| 头像挂件 | 头像边框装饰 | [成就与头像挂件](/guide/misskey/achievements) |
-| 界面与主题 | Deck 多栏布局、自定义主题、小工具 | [界面、主题与小工具](/guide/misskey/ui-themes) |
-| 搜索 | 搜索帖子和用户 | — |
-| 用户资料 | 个人主页、关注/粉丝、资料档案 | [设置与隐私](/guide/misskey/settings-privacy) |
-| 设置 | 通知、隐私、屏蔽、安全等 | [设置与隐私](/guide/misskey/settings-privacy) |
+| 头像挂件 | 叠加在头像上的装饰 | [成就与头像挂件](/guide/misskey/achievements) |
+| 界面与主题 | Deck 多栏布局、自定义主题、小工具、导航栏 | [界面、主题与小工具](/guide/misskey/ui-themes) |
+| 搜索 | 搜索帖子和用户 | [帖子与时间线](/guide/posts#搜索) |
+| 个人主页 | 资料、置顶帖子、文件、成就、回应等 | [帖子与时间线](/guide/posts#个人主页) |
+| 关注请求 | 锁定账号的关注审批 | [帖子与时间线](/guide/posts#关注与关注请求) |
+| 公告 | 服务器公告 | [帖子与时间线](/guide/posts#公告) |
+| 设置 | 资料、隐私、屏蔽、通知、安全、多账号等 | [设置与隐私](/guide/misskey/settings-privacy) |
