@@ -5,8 +5,8 @@
 ## 本地开发
 
 ```bash
-# 安装依赖
-npm install
+# 按锁定版本安装依赖
+npm ci
 
 # 启动开发服务器（默认 5173 端口）
 npm run dev
@@ -17,6 +17,10 @@ npm run build
 # 预览构建结果
 npm run preview
 ```
+
+### 依赖维护
+
+VitePress 1.6.4 仍依赖 Vite 5，`package.json` 使用 `overrides` 将其 Vite 依赖指定为 `^6.4.5`，修复旧开发服务器的安全问题；当前 Vue 插件支持 Vite 6。待 VitePress 稳定版自带已修复的 Vite 后可移除此覆盖。升级依赖后运行 `npm audit` 和 `npm run build`。
 
 ## 部署
 
