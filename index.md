@@ -32,7 +32,7 @@ features:
     details: 对话气泡里的 Markdown、表情贴纸与世界书触发标记速查。
     link: /guide/agent/syntax
   - title: 记忆与主动消息
-    details: 语义记忆、压缩便签，让角色记住剧情、主动找你。
+    details: 压缩便签让角色记住窗口外的剧情，主动消息让角色来找你。
     link: /guide/agent/memory
   - title: Aliya Web
     details: 基于 Misskey 智能体的游戏风聊天终端，电脑手机均可访问。

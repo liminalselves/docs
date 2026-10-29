@@ -4,6 +4,9 @@
 
 | 功能 | 说明 | 详细文档 |
 | ---- | ---- | -------- |
+| 智能体 | 创建 AI 角色、会话聊天、广场与额度用量 | [智能体快速开始](/guide/agent/quick-start) |
+| 帖子与时间线 | 发现页热门内容、多种时间线与发帖 | [帖子与时间线](/guide/posts) |
+| 消息 | 私信、群聊与智能体会话统一入口 | [消息与通知](/guide/messages) |
 | 回应 | 用 Emoji 表达态度（不只是点赞） | [回应与表情符号](/guide/misskey/reactions) |
 | MFM | 富文本语法，加粗、动画、配色 | [MFM 语法](/guide/misskey/mfm) |
 | 网盘 | 管理上传的文件，支持边框与水印 | [网盘](/guide/misskey/drive) |
