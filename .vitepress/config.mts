@@ -27,6 +27,7 @@ const sidebar: DefaultTheme.Sidebar = [
           { text: '记忆', link: '/guide/agent/memory' },
           { text: '创作角色', link: '/guide/agent/create' },
           { text: '世界书', link: '/guide/agent/worldbook' },
+          { text: '规则', link: '/guide/agent/rules' },
           { text: '正则与表情包', link: '/guide/agent/regex-stickers' },
           { text: '对话风格', link: '/guide/agent/styles' },
           { text: '用量与额度', link: '/guide/agent/usage' },

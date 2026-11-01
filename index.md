@@ -7,7 +7,7 @@ hero:
     alt: 阈界人格
   name: "阈界人格"
   text: "使用文档"
-  tagline: 阈界人格社区基于 Misskey 搭建，可以发帖、私信、逛频道，也可以和智能体角色聊天、发布自己创作的角色。
+  tagline: 阈界人格社区基于 Misskey 搭建，可以发帖、私信、逛频道，也可以和 AI 角色聊天、发布自己创作的角色。
   actions:
     - theme: brand
       text: 注册与登录
@@ -21,19 +21,19 @@ hero:
 
 features:
   - title: 帖子与时间线
-    details: 发帖、回应、转帖，在发现页和多种时间线里浏览社区动态。
+    details: 发帖、回应、转发，在发现页和多种时间线里浏览社区动态。
     link: /guide/posts
   - title: 消息与通知
     details: 私信、群聊和智能体会话都在消息页，通知集中在通知页。
     link: /guide/messages
   - title: 智能体
-    details: 在广场挑选角色开始聊天，会话、模型、生图、记忆、主动消息。
+    details: 在广场挑选角色聊天，按需配置模型、生图、记忆和主动消息。
     link: /guide/agent/quick-start
   - title: 创作角色
     details: 编辑人设、示例对话、世界书和规则，审核通过后发布到广场。
     link: /guide/agent/create
   - title: 频道、便签与网盘
-    details: 社区的整理与收藏工具，还有图集、页面、Play 和内置游戏。
+    details: 整理和收藏内容的工具，以及图集、页面、Play 和内置游戏。
     link: /guide/features
   - title: 官方 App
     details: 社区的 Android 客户端，账号和功能与网页端相同。
@@ -42,7 +42,7 @@ features:
     details: 项目组的另一个项目，仿游戏界面的 Aliya 聊天终端。
     link: /guide/aliya-web
   - title: 常见问题
-    details: 429 限流、令牌泄露、余额不足、生成失败等问题的处理。
+    details: 429 限流、访问令牌泄露等问题的处理。
     link: /guide/faq
 ---
 

@@ -1,13 +1,13 @@
 # 功能一览
 
-阈界人格社区基于 Misskey 搭建，主要功能如下，详细说明见各分页。
+阈界人格社区的主要功能如下，详细说明见各页面。
 
 | 功能 | 说明 | 详细文档 |
 | ---- | ---- | -------- |
 | 帖子与时间线 | 发帖、发现页、多种时间线视角 | [帖子与时间线](/guide/posts) |
 | 消息与通知 | 私信、群聊、通知中心 | [消息与通知](/guide/messages) |
 | 智能体 | 和 AI 角色聊天、创作角色 | [游玩入门](/guide/agent/quick-start) |
-| 回应 | 用 Emoji 表达态度（不只是点赞） | [回应与表情符号](/guide/misskey/reactions) |
+| 回应 | 用任意表情回应帖子 | [回应与表情符号](/guide/misskey/reactions) |
 | MFM | 富文本语法，加粗、动画、配色 | [MFM 语法](/guide/misskey/mfm) |
 | 网盘 | 管理上传的文件，支持边框与水印 | [网盘](/guide/misskey/drive) |
 | 频道 | 加入兴趣频道，独立时间线 | [频道](/guide/misskey/channels) |
@@ -15,7 +15,7 @@
 | 天线 | 按关键词订阅内容 | [列表与天线](/guide/misskey/lists-antennas) |
 | 便签 | 将帖子收藏到自建合集，可公开分享 | [便签与收藏](/guide/misskey/clips-favorites) |
 | 收藏 | 轻量收藏帖子 | [便签与收藏](/guide/misskey/clips-favorites) |
-| 图集 | 浏览和发布用户作品 | [图集](/guide/misskey/gallery) |
+| 图集 | 浏览和发布图片作品 | [图集](/guide/misskey/gallery) |
 | 页面 | 创建独立图文页面 | [页面与 Play](/guide/misskey/pages-play) |
 | Play | AiScript 互动小程序 | [页面与 Play](/guide/misskey/pages-play) |
 | 游戏 | 泡泡游戏、黑白棋 | [内置游戏](/guide/misskey/games) |

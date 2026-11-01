@@ -28,7 +28,9 @@ MFM 支持 `$[标签 内容]` 格式的装饰语法，可叠加参数。当前�
 
 **颜色与字体**：`fg`（前景色 `color=`）、`bg`（背景色 `color=`）、`border`（边框）、`font`（字体：serif / monospace / cursive / fantasy / emoji / math）
 
-**其他**：`flip`（翻转 `h` / `v`）、`blur`（模糊，悬停显示）、`rainbow`（彩虹色）、`sparkle`（闪光）、`ruby`（注音）、`unixtime`（显示日期时间）、`tada` 等动画均支持 `speed=` 与 `delay=` 参数
+**其他**：`flip`（翻转 `h` / `v`）、`blur`（模糊，悬停显示）、`rainbow`（彩虹色）、`sparkle`（闪光）、`ruby`（注音）、`unixtime`（显示日期时间）
+
+动画类标签和 `rainbow` 支持 `speed=` 与 `delay=` 参数。
 
 ## 示例
 
@@ -39,6 +41,4 @@ $[spin.alternate 🌀]
 $[x2 $[rainbow 彩虹大字]]
 ```
 
-动画效果会在时间线中实际播放。
-
-更完整的语法说明见官方文档：[MFM Cheatsheet](https://misskey-hub.net/en/docs/for-users/features/mfm/)。
+完整语法见官方文档：[MFM Cheatsheet](https://misskey-hub.net/en/docs/for-users/features/mfm/)。
